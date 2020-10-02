@@ -36,9 +36,9 @@ class AllHistory : AppCompatActivity() {
             startActivity(intent)
         }
 
-        lvHistory.setOnItemClickListener{parent, view, position, id ->
-            Toast.makeText(this, position, Toast.LENGTH_SHORT).show()
 
+        lvHistory.setOnItemClickListener { adapterView, view, i, l ->
+            Toast.makeText(applicationContext, "testing", Toast.LENGTH_SHORT).show()
         }
 
 
